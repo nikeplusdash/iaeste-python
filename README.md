@@ -89,9 +89,11 @@ format(x,'x') #Prints 3039
 - Level of work
 
 ----------
-Horton
+|XYZ|
 ----------
-VMWare
+|Horton|
 ----------
-Windows OS
+|VMWare|
+----------
+|Windows OS|
 ----------
