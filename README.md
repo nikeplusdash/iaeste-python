@@ -83,14 +83,48 @@ format(x,'b') #Prints 11000000111001
 format(x,'o') #Prints 30071
 format(x,'x') #Prints 3039
 ```
+Below the binary contains negative sign
+```python
+x=-1234
+format(x,'b')
+```
 
 ### Working with Linux
 
-- Level of work
+- **Level of work**
 
+hadoop
 
-Level
-----------
 Horton 
+
 VMWare 
+
 Windows OS 
+
+- We use WinSCP to create a channel between the OS and server
+
+### **Some Important commands**
+
+- hadoop fs -mkdir /bingo
+  ^the one which processses data  ^file system  ^directory name
+
+- hadoop fs -ls / 
+            ^lists the system
+
+- hadoop fs -copyFromLocal /root/Test/4300.txt  /bingo      
+
+  or
+
+  hadoop fs cp /root/Test/4300.txt /bingo
+
+- hadoop fs -cat /bingo/4300.txt
+            ^categorizes
+
+- cd java-files
+- sh java-compile.sh WordCount.java
+
+- hadoop fs WordCOunt.jar org.apache.hadoop.examples.WordCount /bingo/4300.txt /testout
+
+- hadoop fs -cat /testout/part-r-00000
+
+- hadoop fs -get /testout/part* /root/xyz

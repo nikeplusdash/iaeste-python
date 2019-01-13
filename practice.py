@@ -46,3 +46,17 @@ hex(x)  #Converts to Hexadecimal  - Prints  '0x3039'
 format(x,'b') #Prints 11000000111001
 format(x,'o') #Prints 30071
 format(x,'x') #Prints 3039
+
+#Program-06
+
+x=-1234
+format(x,'b')
+format(2**16+x,'b')
+
+#Program-07
+
+a=1+2j
+b=complex(1,-2)
+a.real
+b.imag
+a.conjugate()
