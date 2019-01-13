@@ -35,5 +35,34 @@ print(textwrap.fill(s,1,initial_indent='  - '))   #Adds ' - ' at the start of ea
 print(textwrap.fill(s,1,subsequent_indent='  - '))    #Adds ' - ' after every line except the first one
 ```
 
-### Replacing HTML/XML entities such as &entity; / &#code; with corresponding text
+### Replacing HTML/XML entities such as &entity; / &#code; with corresponding text Alternatively, you need to produce the text but escape certain characters (<,>,& etc)
 
+So this basically converts the text to its HTML form
+
+```python
+s = 'Elements are written as "<tag>text</tag>".'  #allocation starts from right to left
+import html
+print(s)
+print(html.escape(s))
+print(html.escape(s,quote=False)) #Disabling escape of quotes
+```
+
+### Rounding off
+
+This is done with the help of round(x,y) where x is the integer/float and y is the decimal points to be rounded off to given power of 10
+
+```python
+round(1.27,1)
+round(-1.27,1)
+round(1.2563,3)
+a=12456
+round(a,-3) #prints 12000 which is rounding  off to 10e3
+```
+
+Many time format is used for precision formatting
+
+```python
+x=1.23456789
+format(x,'0.3f')
+'value is {:0.3f}'.format(x)
+```

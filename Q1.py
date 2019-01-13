@@ -1,9 +1,32 @@
-s='{name} has {n} messages'
-s=s.format(name='Nikesh',n=37)
+import textwrap
+s = '{name} has {n} messages'
+s = s.format(name='Nikesh', n=37)
 print(s)
 
-import textwrap
-s="Labore voluptate ullamco anim fugiat reprehenderit voluptate duis consectetur. Exercitation fugiat adipisicing qui consequat aliqua voluptate. Nostrud commodo est excepteur nostrud et pariatur do eiusmod. Occaecat mollit proident enim magna irure deserunt laborum. Aliquip culpa in laboris tempor nostrud duis pariatur ut Lorem consequat quis excepteur dolore reprehenderit. Enim sint nulla mollit deserunt ipsum est Lorem non cupidatat esse. Excepteur in sunt nisi deserunt non do adipisicing ipsum. Qui ex magna laborum est."
-print(textwrap.fill(s,10))    #Wraps the text 
-print(textwrap.fill(s,100,initial_indent='  - '))
-print(textwrap.fill(s,100,subsequent_indent='  - '))
+s = 'Hello'
+print(textwrap.fill(s, 1))  # Wraps the text
+print(textwrap.fill(s, 1, initial_indent='  - '))
+print(textwrap.fill(s, 1, subsequent_indent='  - '))
+
+s = 'Elements are written as "<tag>text</tag>".'
+import html
+print(s)
+print(html.escape(s))
+print(html.escape(s,quote=False)) #Disabling escape of quotes
+round(1.27,1)
+round(-1.27,1)
+round(1.2568,3)
+a=12456
+round(a,-3)
+
+x=1.23456789
+format(x,'0.3f')
+'value is {:0.3f}'.format(x)
+
+a=2.1
+b=4.2
+c=a+b
+c=round(c,2)
+print(c)
+c=format(c,'0.2f')
+print(c)
