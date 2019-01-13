@@ -41,7 +41,7 @@ bin(x)  #Converts to binary - Prints  '0b11000000111001'
 oct(x)  #Converts to Octal  - Prints  '0o30071'
 hex(x)  #Converts to Hexadecimal  - Prints  '0x3039'
 
-#Now to remove oo,ob and ox
+#Now to remove oo, ob and ox
 
 format(x,'b') #Prints 11000000111001
 format(x,'o') #Prints 30071

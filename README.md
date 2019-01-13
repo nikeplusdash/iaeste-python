@@ -83,3 +83,15 @@ format(x,'b') #Prints 11000000111001
 format(x,'o') #Prints 30071
 format(x,'x') #Prints 3039
 ```
+
+### Working with Linux
+
+- Level of work
+
+----------
+Horton
+----------
+VMWare
+----------
+Windows OS
+----------
