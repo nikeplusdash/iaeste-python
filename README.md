@@ -66,3 +66,20 @@ x=1.23456789
 format(x,'0.3f')
 'value is {:0.3f}'.format(x)
 ```
+
+### Converting integers to binary, octal, hexadecimal
+
+The program  below converts to decimal, binary and so on
+
+```python
+x=12345
+bin(x)  #Converts to binary - Prints  '0b11000000111001'
+oct(x)  #Converts to Octal  - Prints  '0o30071'
+hex(x)  #Converts to Hexadecimal  - Prints  '0x3039'
+```
+The program below does the same as above but removes the initial
+```python
+format(x,'b') #Prints 11000000111001
+format(x,'o') #Prints 30071
+format(x,'x') #Prints 3039
+```
